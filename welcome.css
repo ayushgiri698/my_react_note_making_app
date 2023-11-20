@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One&display=swap");
+
+.welcome {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('C:\\Users\\ayush\\OneDrive\\Desktop\\new_firebase\\image1.jpg'); /* Adjust the path for web usage */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome > h1 {
+  font-family: "Changa One", sans-serif;
+  font-size: 10vw; /* Responsive font size */
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%); /* Centering the title */
+  max-width: 90%; /* Ensure it doesn't overflow */
+}
+
+.login-register-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centering the container */
+  background: #ffffff;
+  width: 80%; /* Responsive width */
+  max-width: 400px; /* Maximum width */
+}
+
+.login-register-container > input,
+.login-register-container > button {
+  height: 30px;
+  width: 100%; /* Full width of the container */
+  border: 1px solid gray;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 1.2rem; /* Responsive font size */
+  padding: 5px;
+}
+
+.sign-in-register-button,
+.create-account-button {
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Full width */
+}
+
+.sign-in-register-button {
+  background: linear-gradient(122.19deg, #da2079 1.89%, #2a00d5 113.56%);
+  color: white;
+}
+
+.create-account-button {
+  background: none;
+}
+
+.todo-svg {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  transform: scale(1.3);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .welcome > h1 {
+    font-size: 8vw; /* Smaller font size for smaller screens */
+  }
+
+  .login-register-container {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+
+  .login-register-container > input,
+  .login-register-container > button {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+  }
+}

@@ -1,0 +1,60 @@
+.homepage {
+  height: 100vh;
+  width: 100vw; /* Corrected from 'weight' to 'width' */
+  background-image: url('C:\\Users\\ayush\\OneDrive\\Desktop\\new_firebase\\image1.jpg'); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.add-edit-input {
+  position: absolute;
+  top: 20px;
+  outline: none;
+  border: none;
+  height: 30px;
+  font-size: 25px;
+  padding: 5px 20px;
+}
+
+.add-confirm-icon {
+  position: absolute;
+  transform: scale(2);
+  top: 27px;
+  right: 750px; /* Consider adjusting for responsiveness */
+  cursor: pointer;
+  color: black; /* Color of the add icon */
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.todo > h1 {
+  width: 500px;
+  background-color: rgb(211, 211, 211);
+  padding: 5px 10px;
+}
+
+.edit-button,
+.delete-button {
+  cursor: pointer;
+  margin-left: 10px;
+  color: white; /* Set color of edit and delete icons to white */
+}
+
+.logout-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 20px;
+  background: red;
+  color: white;
+}
